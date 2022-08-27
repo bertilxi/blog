@@ -6,17 +6,11 @@
   "author": "Fernando Berti <contact@fberti.com>",
   "repository": "bertilxi/blog",
   "license": "MIT",
-  "engines": {
-    "node": ">=16"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "deploy": "vercel deploy",
-    "deps": "run-s deps:*",
-    "deps:update": "[ -z $GITHUB_ACTIONS ] && yarn add notion-client notion-types notion-utils react-notion-x || echo 'Skipping deps:update on CI'",
-    "deps:link": "[ -z $GITHUB_ACTIONS ] && yarn link notion-client notion-types notion-utils react-notion-x || echo 'Skipping deps:link on CI'",
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "eslint '**/*.{ts,tsx}'"
   },
