@@ -5,6 +5,11 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 
 module.exports = withBundleAnalyzer({
   staticPageGenerationTimeout: 300,
+  reactStrictMode: true,
+  swcMinify: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     domains: [
       "www.notion.so",
