@@ -11,10 +11,10 @@ export default siteConfig({
   // basic site info (required)
   name: "Berti blog",
   domain: "fberti.com",
-  author: "Fernando Berti",
+  author: "Berti",
 
   // open graph metadata (optional)
-  description: "Berti idead on building systems",
+  description: "Berti ideas on building systems",
 
   // social usernames (optional)
   twitter: "bertilxi",

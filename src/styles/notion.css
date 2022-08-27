@@ -7,9 +7,31 @@
  * places to add some flare.
  */
 
+:root {
+  --notion-font: "Inter", sans-serif;
+}
+
+.dark-mode {
+  --fg-color: #d4d4d8;
+  --fg-color-0: #71717a;
+  --fg-color-1: #71717a;
+  --fg-color-2: #71717a;
+  --fg-color-3: #71717a;
+  --fg-color-4: #71717a;
+  --fg-color-5: #d4d4d8;
+  --fg-color-6: #d4d4d8;
+  --fg-color-icon: #d4d4d8;
+
+  --bg-color: #18181b;
+  --bg-color-0: #27272a;
+  --bg-color-1: #3f3f46;
+  --bg-color-2: #52525b;
+}
+
 .notion {
-  --notion-max-width: 720px;
-  --notion-header-height: 54px;
+  /* --notion-max-width: 720px; */
+  /* --notion-header-height: 54px; */
+  --notion-max-width: 900px;
 }
 
 .notion-page {
@@ -40,7 +62,7 @@
 }
 
 .notion-header .notion-nav-header {
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -189,8 +211,8 @@
 .notion-page-cover-wrapper,
 .notion-page-cover-wrapper span,
 .notion-page-cover-wrapper img {
-  max-width: 1200px !important;
-  border-radius: 24px;
+  /* max-width: 1200px !important; */
+  /* border-radius: 24px; */
 }
 
 .notion-page-cover-wrapper {
@@ -354,13 +376,13 @@
 
 .notion-header {
   background: hsla(0, 0%, 100%, 0.8);
-  backdrop-filter: saturate(180%) blur(16px);
+  backdrop-filter: blur(16px);
 }
 
 .dark-mode .notion-header {
   background: transparent;
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
-  backdrop-filter: saturate(180%) blur(8px);
+  backdrop-filter: blur(8px);
 }
 
 /* Workaround for Firefox not supporting backdrop-filter yet */
